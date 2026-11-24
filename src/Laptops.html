@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar md:navbar-expand bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="TATAStriveLogo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      TATA STRIVE
+    </a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Mens.html">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="women.html">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Kids.html">Kids</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Electronics
+            </button>
+            <div class="menu">
+              <a class="menu-item" href="Laptops.html">Laptops</a>
+              <a class="menu-item" href="Mobiles.html">Mobiles</a>
+              <a class="menu-item" href="Machines.html">Machines</a>
+              <hr class="menu-divider">
+              <a class="menu-item" href="#">All</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn-outline theme-success" style="color:blue;background-color:Orange" type="submit"><strong>Search</strong></button>
+        </form>
+        <span class="avatar" style="--bs-avatar-size: 3rem;">
+  <a href="https://www.linkedin.com/in/arunkumarv03/"><img class="avatar-img" src="profilelogo.jpeg" width="48" height="48" alt="mdo"></a>
+</span>
+      </div>
+    </dialog>
+  </div>
+</nav>
+<!-- Added mt-4 (or mt-5) on the container for top margin -->
+<div class="container mt-8">
+  <div class="d-flex flex-wrap mb-5" style="row-gap: 32px; column-gap: 16px;">
+
+<!--    Laptop 1-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="oppo.png" class="card-img-top" alt="...">-->
+
+      <div id="carouselcard1" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71upqrupfYL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/81L07zdDRpL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/816R3yRQcVL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard1" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard1" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Apple 2026 MacBook</h4>
+        <p>
+          <strong>Rs. 1,72,490</strong>
+          <del style="color: #999; font-size: 13px;">Rs. 1,85,900</del>
+          <span style="color: #ff8066; font-size: 13px;">(7% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+<!--    Laptop 2-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="men10.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard2" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/61oaKajVurL._SL1080_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/61K9346sU+L._SL1080_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/51SgLnJgdwL._SL1080_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard2" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard2" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">HP OmniBook 5</h4>
+        <p>
+          <strong>Rs. 1,07,799</strong>
+          <del style="color: #999; font-size: 13px;">Rs. 1,94,947</del>
+          <span style="color: #ff8066; font-size: 13px;">(45% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+    <!--    Laptop 3-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="kids2.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard3" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71EQK0z99+L._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/91ztwQiQP-L._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/81SCEMdCsDL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcarsd3" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard3" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Acer Aspire 3</h4>
+        <p>
+          <strong>Rs. 37,990 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. 54</del>
+          <span style="color: #ff8066; font-size: 13px;">(82,880% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+    <!--    Laptop 4-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="women8.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard4" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71NA9vn97oL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71vNgvVBhnL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/511MkakbCwL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard4" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard4" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Lenovo V14 Laptop</h4>
+        <p>
+          <strong>Rs. 57,350 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. 85,000 </del>
+          <span style="color: #ff8066; font-size: 13px;">(33% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+    <!--    Laptop 5-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="men9.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard5" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71UhRPa+WsL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71GAX-C+aiL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/81VRjAC7pbL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard5" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard5" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">ASUS Chromebook</h4>
+        <p>
+          <strong>Rs. 28,990 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. 37,990</del>
+          <span style="color: #ff8066; font-size: 13px;">(24% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+    <!--    Laptop 6-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="women3.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard6" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71tvlUVzTwL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71tvlUVzTwL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71Wu88CDx6L._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard6" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard6" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">HP 255 G10</h4>
+        <p>
+          <strong>Rs. 56,990.01 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. 1,23,390</del>
+          <span style="color: #ff8066; font-size: 13px;">(54% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+    <!--    Laptop 7-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="men3.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard7" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71rhZEheSZL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71hVo344zJL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/71OqApV2iFL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard7" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard7" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Dell 15</h4>
+        <p>
+          <strong>Rs. 58,500 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. 62,598</del>
+          <span style="color: #ff8066; font-size: 13px;">(7% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+    <!--    Laptop 8-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="kids10.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard8" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/51CIIx6l+VL.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/61m15w8AXxL._SL1081_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/61+9TFkTxfL._SL1081_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard8" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard8" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Primebook 2 Pro</h4>
+        <p>
+          <strong>Rs. 28,990 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. 39,990</del>
+          <span style="color: #ff8066; font-size: 13px;">(28% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+    <!--    Laptop 9-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src=" men6.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard9" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/716tfglNg+L._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/81TxXPb+8XL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/81aRf+jDfdL._SL1500_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard9" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard9" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">HP Smartchoice Victus</h4>
+        <p>
+          <strong>Rs. 1,23,990 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. </del>
+          <span style="color: #ff8066; font-size: 13px;">(0% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+
+    <!--    Laptop 10-->
+    <section class="card" style="flex: 0 0 calc(20% - 13px);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.2)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+<!--      <img src="kids7.jpg" class="card-img-top" alt="...">-->
+      <div id="carouselcard10" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/61j-1aJgDDL._SL1100_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 1">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/61GbqZX1o-L._SL1100_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 2">
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center bg-white p-2 rounded-4" style="height: 220px;">
+              <img src="https://m.media-amazon.com/images/I/51GZS89ff5L._SL1100_.jpg" class="w-100 h-100 object-fit-contain" alt="Product Image 3">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Previous / Next Controls -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard10" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselcard10" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">HP Victus, 13th Gen</h4>
+        <p>
+          <strong>Rs. 94,790 </strong>
+          <del style="color: #999; font-size: 13px;">Rs. 1,50,000</del>
+          <span style="color: #ff8066; font-size: 13px;">(37% OFF)</span>
+        </p>
+        <a href="#" class="btn-solid theme-primary">Buy</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
